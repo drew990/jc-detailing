@@ -1,23 +1,11 @@
 "use client";
 import React, { useEffect } from "react";
+import UnderConstruction from "@/Components/UnderConstruction/page";
 
-function page() {
-  useEffect(() => {
-    console.log("I AM ALIVE");
-  }, []);
-
-  const handleClick = () => {
-    console.log("I WAS CLICKED");
-    return;
-  };
-
+export default function page() {
   return (
     <div>
-      <h1 onClick={handleClick} style={{ padding: "20rem 0", color: "#000" }}>
-        CONTACT PAGE
-      </h1>
+      <UnderConstruction />
     </div>
   );
 }
-
-export default page;
