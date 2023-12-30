@@ -26,6 +26,9 @@ export default function NavBar() {
             <Link href="/About">
               <p>About Us</p>
             </Link>
+            <Link href="/Services">
+              <p>Services</p>
+            </Link>
             {/* <p>{scrollY}</p> */}
           </section>
         ) : (
@@ -59,7 +62,7 @@ export default function NavBar() {
 function useWindowSize() {
   // Initialize state with undefined width/height so server and client renders match
   // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-  const [windowSize, setWindowSize] = useState({
+  const [windowSize, setWindowSize] = useState<any>({
     width: undefined,
     height: undefined,
   });

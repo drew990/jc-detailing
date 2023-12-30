@@ -6,6 +6,7 @@
 // import pickup from "@/Images/CarType/pickup.png";
 // import suv from "@/Images/CarType/suv.png";
 // import Image from "next/image";
+import UnderConstruction from "@/Components/UnderConstruction/page";
 
 // function page() {
 //   const [data, setData] = useState(null);
@@ -126,3 +127,12 @@
 // }
 
 // export default page;
+import React from "react";
+
+export default function page() {
+  return (
+    <div>
+      <UnderConstruction />
+    </div>
+  );
+}
