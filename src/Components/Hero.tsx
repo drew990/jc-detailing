@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import styles from "../app/page.module.css";
-import HeroImg from "@/Images/Hero/Hero.jpg";
+// import HeroImg from "@/Images/Hero/Hero.jpg";
 import Link from "next/link";
-import Youtube from "react-youtube";
-import ReactPlayer from "react-player";
+// import Youtube from "react-youtube";
+// import ReactPlayer from "react-player";
 // All requests made with the client will be authenticated
 // import { createClient } from "pexels";
 // const client = createClient(
-//   "DUxicnyU3oWfA9Zs6WIo0FaXxd8D8VV8Axe0ZuakouMiNpGIQuFVHMDH"
+//   API_KEY
 // );
 
 export default function Hero() {

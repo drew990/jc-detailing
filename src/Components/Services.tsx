@@ -8,12 +8,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function Services() {
-  const [test, setTest] = useState("");
-
-  const handleClick = () => {
-    console.log("I was clicked");
-  };
-
   return (
     <div className={styles.Service}>
       <h2>Services We Offer</h2>

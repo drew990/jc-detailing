@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import Image from "next/image";
 import styles from "./page.module.css";
 import Hero from "../Components/Hero";
 import Services from "@/Components/Services";
