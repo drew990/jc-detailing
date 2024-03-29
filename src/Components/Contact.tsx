@@ -16,39 +16,10 @@ export default function Contact() {
 
           <p>
             In order to for us to estimate our quotes and give you the best
-            deal, we need to know what car and model we will be working on. All
-            we need to know is the following details
-          </p>
-          <ul
-            style={{
-              width: "fit-content",
-              textAlign: "left",
-              margin: "auto",
-              padding: "1rem 0 ",
-            }}
-          >
-            <li style={{ paddingBottom: "0.75rem" }}>Year of Car</li>
-            <li style={{ paddingBottom: "0.75rem" }}>Car Brand</li>
-            <li style={{ paddingBottom: "0.75rem" }}>
-              Car Type (SUV, Truck, Sedan, etc)
-            </li>
-            <li style={{ paddingBottom: "0.75rem" }}>
-              And what type of service <br /> (Basic Car Wash, Coating, Basic
-              Cleaning)
-            </li>
-          </ul>
-          <p>
-            To help you, <b style={{ fontWeight: "bold" }}>you may copy </b> the
-            message below and fill in the blank
-          </p>
-          <br />
-          <p>
-            Hello, My name is (first name), and I am looking for (service). My
-            car is a (Car Details) I was wondering when your next available day
-            is and how much the service will be. Thank you!
+            deal, we need to know what your vin is
           </p>
         </section>
-        <form>
+        <form action="https://formspree.io/f/mleqpdqr" method="POST">
           <div
             style={{
               display: "flex",
@@ -59,9 +30,10 @@ export default function Contact() {
             <label htmlFor="email">Email</label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="CustomerEmail"
+              name="CustomerEmail"
               placeholder="Email Here"
+              required
             />
           </div>
           <div
@@ -72,7 +44,13 @@ export default function Contact() {
             }}
           >
             <label>Full Name</label>
-            <input type="text" id="fn" name="fn" placeholder="Name Here" />
+            <input
+              type="text"
+              id="FullName"
+              name="FullName"
+              placeholder="Name Here"
+              required
+            />
           </div>
           <div
             style={{
@@ -81,16 +59,55 @@ export default function Contact() {
               paddingTop: "1rem",
             }}
           >
-            <label style={{ paddingBottom: "1rem" }}>Message</label>
-            <textarea
-              placeholder="Message Here. Feel Free To Copy The Given Message"
-              id="message"
-              name="message"
-              rows={6}
-              cols={8}
+            <label>Company Name</label>
+            <input
+              type="text"
+              id="CompanyName"
+              name="CompanyName"
+              placeholder="Company Name"
             />
           </div>
-          <button type="submit">Submit</button>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "1rem",
+            }}
+          >
+            <label>Vin</label>
+            <input
+              type="text"
+              id="Vin"
+              name="Vin"
+              placeholder="Vin"
+              minLength={17}
+              maxLength={17}
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "1rem",
+              maxWidth: "100%",
+              width: "100%",
+            }}
+          >
+            <label style={{ paddingBottom: "1rem", margin: "auto" }}>
+              Message
+            </label>
+            <textarea
+              placeholder="Message Here"
+              id="message"
+              name="message"
+              rows={8}
+              // cols={30}
+              required
+            />
+          </div>
+          <div style={{ maxWidth: "100%", width: "100%" }}>
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </div>
     </div>

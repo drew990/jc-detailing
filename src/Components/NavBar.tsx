@@ -1,8 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "../app/page.module.css";
+
 import Link from "next/link";
+import Image from "next/image";
 import { Fade as Hamburger } from "hamburger-react";
+import Logo1 from "@/assets/logo/AE-Logo-1-new.png";
 
 export default function NavBar() {
   const [isOpen, setOpen] = useState(false);
@@ -11,25 +13,29 @@ export default function NavBar() {
   return (
     <nav>
       <div>
-        <Link href="/">
-          <h3 style={{ paddingBottom: "0" }}>JC Detailing</h3>
+        <Link href="/" style={{ opacity: 1, maxWidth: "175px" }}>
+          <Image
+            src={Logo1}
+            alt="Logo"
+            layout="responsive"
+            width={259}
+            height={86}
+          />
+          {/* <h3 style={{ paddingBottom: "0" }}>Auto Essentials</h3> */}
         </Link>
         {/* <h3>{size.width}</h3> */}
         {size.width != undefined && size.width > 800 ? (
           <section>
-            <Link href="/Q&A">
-              <p>Q&A</p>
+            <Link href="/Services">
+              <p>Services</p>
+            </Link>
+
+            <Link href="/About">
+              <p>About Us</p>
             </Link>
             <Link href="/Contact">
               <p>Contact</p>
             </Link>
-            <Link href="/About">
-              <p>About Us</p>
-            </Link>
-            <Link href="/Services">
-              <p>Services</p>
-            </Link>
-            {/* <p>{scrollY}</p> */}
           </section>
         ) : (
           <Hamburger

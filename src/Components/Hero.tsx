@@ -1,14 +1,7 @@
-// import React, { useEffect } from "react";
 import styles from "../app/page.module.css";
-// import HeroImg from "@/Images/Hero/Hero.jpg";
+import Logo1 from "@/assets/logo/AE-Logo-1-new.png";
 import Link from "next/link";
-// import Youtube from "react-youtube";
-// import ReactPlayer from "react-player";
-// All requests made with the client will be authenticated
-// import { createClient } from "pexels";
-// const client = createClient(
-//   API_KEY
-// );
+import Image from "next/image";
 
 export default function Hero() {
   // console.log(process.env.API_KEY);
@@ -66,14 +59,24 @@ export default function Hero() {
 
       {/* Hero Text And Call To Action */}
       <div className={styles.HeroBackground}>
-        <h1 data-aos="fade-up">Logo Here</h1>
-
-        <h1 data-aos="fade-up">Keeping Your Car Brand New</h1>
+        <div
+          style={{ maxWidth: "650px", paddingBottom: "1rem" }}
+          data-aos="fade-up"
+        >
+          <Image
+            src={Logo1}
+            alt="Logo"
+            layout="responsive"
+            width={259}
+            height={86}
+          />
+        </div>
+        <h1 data-aos="fade-up">Keeping Your Car Stress Free</h1>
         {/* <h2> We Have Your Back</h2>
         <h2> Precision Detailing at its Finest!</h2> */}
         <Link style={{ opacity: 1 }} href="/Contact">
           <button data-aos="fade-up" style={{ cursor: "pointer" }}>
-            Get A Quote
+            Get In Touch
           </button>
         </Link>
       </div>

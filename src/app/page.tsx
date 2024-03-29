@@ -6,8 +6,8 @@ import Services from "@/Components/Services";
 import Quality from "@/Components/Quality";
 import SocialMedia from "@/Components/SocialMedia";
 import Appointment from "@/Components/Contact";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+// import AOS from "aos";
+// import "aos/dist/aos.css"; // You can also use <link> for styles
 
 export default function Home() {
   // function handleClickME() {
@@ -27,6 +27,7 @@ export default function Home() {
       <Services />
       <Appointment />
       <SocialMedia />
+      <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
     </main>
   );
 }
