@@ -1,8 +1,19 @@
+"use client";
 import React from "react";
 // import UnderConstruction from "@/Components/UnderConstruction/page";
 import styles from "@/app/page.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import OilChange from "@/assets/images/OilChange.jpg";
+import Tires from "@/assets/serviceimages/Tires.jpg";
+import Belt from "@/assets/serviceimages/Belt.jpg";
+import Transmission from "@/assets/serviceimages/Transmission.jpg";
+import Brakes from "@/assets/serviceimages/Brakes.jpg";
+import Filter from "@/assets/serviceimages/AirFilter.jpg";
+import AC from "@/assets/serviceimages/AC.jpg";
+import Headlight from "@/assets/serviceimages/headlight.png";
+import Battery from "@/assets/serviceimages/Battery.png";
+import Wiper from "@/assets/serviceimages/Wiper.png";
 
 // BIG SERVICE HORIZONTAL
 // Like Oil changes, brakes, transmission, and belts
@@ -11,11 +22,16 @@ import OilChange from "@/assets/images/OilChange.jpg";
 // Windshield wipers replace, etc
 
 export default function page() {
+  const list = { hidden: { x: -10, opacity: 0 } };
+  const item = { hidden: { x: 0, opacity: 1 } };
+
   return (
-    <div className={styles.Container}>
-      <h1> Our Services</h1>
-      <section className={styles.ServicesCardFlex}>
-        <div className={styles.ServicesCard}>
+    <div style={{ paddingTop: "8rem" }} className={styles.Container}>
+      <h1 style={{ padding: "0 2rem", borderLeft: "2px solid #071d88" }}>
+        Services
+      </h1>
+      <motion.section className={styles.ServicesCardFlex}>
+        <motion.div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
               src={OilChange}
@@ -34,12 +50,12 @@ export default function page() {
               <li> &#x2713; Oil level is black or dark brown</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Brakes}
+              alt="Brake Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -59,8 +75,8 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Belt}
+              alt="Belt Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -80,8 +96,8 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Transmission}
+              alt="Transmission Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -101,8 +117,8 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Filter}
+              alt="Filter Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -121,8 +137,8 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Tires}
+              alt="Tires Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -140,8 +156,8 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={AC}
+              alt="AC Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -159,8 +175,8 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Wiper}
+              alt="Wiper Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -178,8 +194,8 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Battery}
+              alt="Battery Pic"
               width={1}
               height={1}
               layout="responsive"
@@ -199,15 +215,15 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
-              src={OilChange}
-              alt="Oil Change Pic"
+              src={Headlight}
+              alt="Headlight Pic"
               width={1}
               height={1}
               layout="responsive"
             />
           </div>
           <div className={styles.ServicesCardText}>
-            <h3>Battery Replacement</h3>
+            <h3>Headlight Replacement</h3>
             <p>Contact service if:</p>
             <ul>
               <li>&#x2713; Your headlight flickers</li>
@@ -216,7 +232,7 @@ export default function page() {
             </ul>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

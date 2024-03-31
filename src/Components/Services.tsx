@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "../app/page.module.css";
 import Oil from "@/assets/icons/oil.png";
 import Filter from "@/assets/icons/Filter.png";
@@ -159,7 +159,7 @@ function Services() {
           </ul>
         </div> */}
       </section>
-      <Link style={{ opacity: 1 }} href="/Contact">
+      <Link style={{ opacity: 1 }} href="/contact">
         <button data-aos="fade-up" style={{ cursor: "pointer" }}>
           Get In Touch
         </button>

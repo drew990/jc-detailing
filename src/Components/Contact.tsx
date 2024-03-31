@@ -12,11 +12,14 @@ export default function Contact() {
       <h2>Make An Appointment Today</h2>
       <div data-aos="fade-up" className={styles.AppointmentFlex}>
         <section>
-          <h3>What To Write</h3>
+          <h3>Contact Us Today</h3>
 
           <p>
-            In order to for us to estimate our quotes and give you the best
-            deal, we need to know what your vin is
+            Don't wait any longer to take care of your car's maintenance needs.
+            We understand how important it is to keep your car running smoothly,
+            which is why we respond to appointment requests within 48 hours. So
+            why wait? Schedule an appointment with Auto Essentials today and
+            experience the convenience and quality of our services firsthand.
           </p>
         </section>
         <form action="https://formspree.io/f/mleqpdqr" method="POST">
@@ -27,7 +30,7 @@ export default function Contact() {
               paddingTop: "1rem",
             }}
           >
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email*</label>
             <input
               type="email"
               id="CustomerEmail"
@@ -43,7 +46,7 @@ export default function Contact() {
               paddingTop: "1rem",
             }}
           >
-            <label>Full Name</label>
+            <label>Full Name*</label>
             <input
               type="text"
               id="FullName"
@@ -59,7 +62,7 @@ export default function Contact() {
               paddingTop: "1rem",
             }}
           >
-            <label>Company Name</label>
+            <label>Company</label>
             <input
               type="text"
               id="CompanyName"
@@ -74,7 +77,7 @@ export default function Contact() {
               paddingTop: "1rem",
             }}
           >
-            <label>Vin</label>
+            <label>Vin*</label>
             <input
               type="text"
               id="Vin"
@@ -94,7 +97,7 @@ export default function Contact() {
             }}
           >
             <label style={{ paddingBottom: "1rem", margin: "auto" }}>
-              Message
+              Message*
             </label>
             <textarea
               placeholder="Message Here"
@@ -108,6 +111,7 @@ export default function Contact() {
           <div style={{ maxWidth: "100%", width: "100%" }}>
             <button type="submit">Submit</button>
           </div>
+          <p>* Required</p>
         </form>
       </div>
     </div>

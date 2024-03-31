@@ -7,9 +7,9 @@ import Footer from "@/Components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "JC Detailing",
+  title: "Auto Essentials - Mobile Lube",
   description:
-    "JC Detailing is a professional auto detailing company that provides high-quality services to keep your vehicle looking clean and shiny.",
+    "Auto Essentials is a top-notch mobile lube shop that provides fast, reliable, and professional on-site automotive maintenance services.",
 };
 
 export default function RootLayout({
@@ -21,13 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar />
-        <link
-          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-          rel="stylesheet"
-        ></link>
         {children}
         <Footer />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       </body>
     </html>
   );

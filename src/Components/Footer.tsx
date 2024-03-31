@@ -23,7 +23,7 @@ function Footer() {
           <div>
             <h4>Contact Info</h4>
             <p>
-              Phone Number: <br /> Andrew -(562)325-2358 <br />
+              Andrew - (562)325-2358 <br />
               Robert - (562)556-6128
             </p>
             <p>

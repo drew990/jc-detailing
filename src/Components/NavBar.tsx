@@ -26,14 +26,14 @@ export default function NavBar() {
         {/* <h3>{size.width}</h3> */}
         {size.width != undefined && size.width > 800 ? (
           <section>
-            <Link href="/Services">
+            <Link href="/services">
               <p>Services</p>
             </Link>
 
-            <Link href="/About">
+            <Link href="/about">
               <p>About Us</p>
             </Link>
-            <Link href="/Contact">
+            <Link href="/contact">
               <p>Contact</p>
             </Link>
           </section>

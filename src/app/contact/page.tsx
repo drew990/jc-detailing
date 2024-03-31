@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Phone from "@/assets/icons/Phone.png";
-import Mail from "@/assets/icons/Mail.png";
+// import Mail from "@/assets/icons/Mail.png";
+// import Email from "@/assets/images/Email.jpg";
 
 import styles from "@/app/page.module.css";
 import Image from "next/image";
@@ -9,9 +10,19 @@ import Image from "next/image";
 export default function page() {
   return (
     <div
-      style={{ paddingTop: "10rem", maxWidth: "1000px" }}
+      style={{ paddingTop: "8rem", maxWidth: "1000px" }}
       className={styles.Container}
     >
+      {/* <div className={styles.ContactHeaderPic}>
+         <Image
+          src={Email}
+          alt="Email"
+          layout="responsive"
+          width={5}
+          height={1}
+          style={{ objectFit: "contain" }}
+        /> 
+      </div> */}
       <div className={styles.ContactCustomerPhone}>
         <h2>Contact Us</h2>
       </div>
@@ -40,7 +51,7 @@ export default function page() {
         action="https://formspree.io/f/mleqpdqr"
         method="POST"
       >
-        <div style={{ width: "fit-content" }}>
+        <div className={styles.ContactFormDisplay}>
           <div
             style={{
               display: "flex",
@@ -48,7 +59,7 @@ export default function page() {
               paddingTop: "1rem",
             }}
           >
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email*</label>
             <input
               type="email"
               id="CustomerEmail"
@@ -64,7 +75,7 @@ export default function page() {
               paddingTop: "1rem",
             }}
           >
-            <label>Full Name</label>
+            <label>Full Name*</label>
             <input
               type="text"
               id="FullName"
@@ -80,7 +91,7 @@ export default function page() {
               paddingTop: "1rem",
             }}
           >
-            <label>Company Name</label>
+            <label>Company </label>
             <input
               type="text"
               id="CompanyName"
@@ -95,7 +106,7 @@ export default function page() {
               paddingTop: "1rem",
             }}
           >
-            <label>Vin</label>
+            <label>Vin*</label>
             <input
               type="text"
               id="Vin"
@@ -111,7 +122,7 @@ export default function page() {
             display: "flex",
             flexDirection: "column",
             paddingTop: "1rem",
-            width: "fit-content",
+            width: "100%",
           }}
         >
           <label
@@ -121,7 +132,7 @@ export default function page() {
               margin: "auto",
             }}
           >
-            Message
+            Message*
           </label>
           <textarea
             className={styles.NewTextarea}
@@ -131,11 +142,23 @@ export default function page() {
             rows={8}
             // cols={30}
             required
+            style={{ width: "100%" }}
           />
         </div>
-        <div style={{ margin: " 3rem auto", width: "fit-content" }}>
-          <button type="submit">Submit</button>
+        <div
+          style={{
+            margin: " 3rem auto",
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <button style={{ width: "50%" }} type="submit">
+            Submit
+          </button>
         </div>
+
+        <p>* Required</p>
       </form>
     </div>
   );

@@ -83,15 +83,13 @@ nav section {
 
 button {
   font-size: 20px;
-  font-weight: 600;
-  padding: 1rem 3.5rem;
-  background-color: var(--color-primary-light);
-  color: var(--color-text-light);
-  /* background-color: var(--color-primary); */
-  /* color: var(--color-text-dark); */
-  border: none;
+  font-weight: 500;
+  padding: 1rem 4.5rem;
+  background-color: var(--color-secondary-dark);
+  color: var(--color-text-dark);
+  border: 2px solid var(--color-primary-light);
   border-radius: var(--border-radius);
-  /* box-shadow: var(--box-shadow); */
+  box-shadow: var(--box-shadow);
   margin: 1rem 0;
   transition: var(--transition);
   cursor: pointer;
@@ -222,6 +220,14 @@ form div {
     color-scheme: dark;
   }
 } */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  form div {
+    max-width: 100%;
+  }
+  input {
+    max-width: 100%;
+  }
+}
 
 @media screen and (max-width: 767px) {
   form div {

@@ -2,6 +2,7 @@ import styles from "../app/page.module.css";
 import Logo1 from "@/assets/logo/AE-Logo-1-new.png";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   // console.log(process.env.API_KEY);
@@ -71,13 +72,23 @@ export default function Hero() {
             height={86}
           />
         </div>
-        <h1 data-aos="fade-up">Keeping Your Car Stress Free</h1>
+        <motion.h1
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+        >
+          Keeping Your Car Stress Free
+        </motion.h1>
         {/* <h2> We Have Your Back</h2>
         <h2> Precision Detailing at its Finest!</h2> */}
-        <Link style={{ opacity: 1 }} href="/Contact">
-          <button data-aos="fade-up" style={{ cursor: "pointer" }}>
+        <Link style={{ opacity: 1 }} href="/contact">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileFocus={{ scale: 0.95 }}
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+          >
             Get In Touch
-          </button>
+          </motion.button>
         </Link>
       </div>
     </div>

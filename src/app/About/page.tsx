@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
-import UnderConstruction from "@/Components/UnderConstruction/page";
+import React from "react";
 import style from "@/app/page.module.css";
 
 export default function page() {
@@ -20,28 +19,20 @@ export default function page() {
           care.
         </p>
       </section>
-      <h1 style={{ textAlign: "center" }}>Meet The Crew!</h1>
-      <section className={style.AboutLeft}>
-        <div className={style.AboutProfilePic}></div>
-        <h2>Robert</h2>
-        <p className={style.AboutCard}>
-          we are the new generation of technicians, eager{" "}
-        </p>
-      </section>
-      <section className={style.AboutRight}>
-        <div className={style.AboutProfilePic}></div>
-        <h2>Joshua</h2>
-        <p className={style.AboutCard}>
-          With years of experience, working with company fleets, he strives in
-          quality and his knowledge in automotive
-        </p>
-      </section>
-      <section className={style.AboutLeft}>
-        <div className={style.AboutProfilePic}></div>
-        <h2>Andrew</h2>
-        <p className={style.AboutCard}>
-          With years of experience, working with company fleets, he strives in
-          quality and his knowledge in automotive
+      <section className={style.AboutGenCard}>
+        <h1 style={{ textAlign: "center" }}>The New Generation of Mechanic</h1>
+        <p>
+          We are the new generation of mechanics, and we're bringing a fresh
+          perspective to the automotive industry. With years of experience under
+          our belts, we've already established a reputation for ourselves as
+          reliable, knowledgeable professionals who prioritize quality and
+          customer satisfaction above all else. We believe that every vehicle is
+          unique, and we take the time to listen to our customer's concerns and
+          address any issues with care and attention to detail. Whether you need
+          routine maintenance or more complex repairs, you can trust that your
+          car is in good hands with our talented team of experts. We're excited
+          to continue pushing the boundaries of what it means to be a mechanic
+          and to provide our customers with the best possible service.
         </p>
       </section>
     </div>
