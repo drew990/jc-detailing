@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "../app/page.module.css";
-import Oil from "@/assets/icons/oil.png";
+import Oil from "@/assets/icons/Oil.png";
 import Filter from "@/assets/icons/Filter.png";
 import Tire from "@/assets/icons/Tire.png";
 import AC from "@/assets/icons/AC.png";
@@ -55,10 +55,10 @@ function Services() {
           <h3>Transmission Service</h3>
           <p>
             Regular transmission service is crucial to prevent expensive repairs
-            and maintain the health of your vehicle's transmission. By getting
-            your transmission serviced at recommended intervals, you can prevent
-            wear and tear, improve fuel efficiency, and ensure the reliability
-            of your vehicle.
+            and maintain the health of your vehicle&apos;s transmission. By
+            getting your transmission serviced at recommended intervals, you can
+            prevent wear and tear, improve fuel efficiency, and ensure the
+            reliability of your vehicle.
           </p>
         </div>
         <div className={styles.Card1}>
@@ -84,7 +84,7 @@ function Services() {
           <Image alt="AC" src={AC} height={50} width={50} />
           <h4>AC Recharge</h4>
           <p>
-            Recharge your car's air conditioning regularly to prevent poor
+            Recharge your car&apos;s air conditioning regularly to prevent poor
             performance, high fuel consumption, and costly repairs
           </p>
         </div>
@@ -112,7 +112,7 @@ function Services() {
           <h4>Battery Replacement</h4>
           <p>
             Car batteries generally last from 3-5 years, but testing the
-            battery's performance every three years is recommended.
+            battery&apos;s performance every three years is recommended.
           </p>
         </div>
 

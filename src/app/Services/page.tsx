@@ -149,7 +149,7 @@ export default function page() {
             <p>Contact service if:</p>
             <ul>
               <li>&#x2713; The tire has noticeable wear</li>
-              <li> &#x2713; You've driven 5,000 miles</li>
+              <li> &#x2713; You&apos;ve driven 5,000 miles</li>
             </ul>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function page() {
             <h3>AC Recharge</h3>
             <p>Contact service if:</p>
             <ul>
-              <li>&#x2713; AC doesn't blow cold air</li>
+              <li>&#x2713; AC doesn&apos;t blow cold air</li>
               <li> &#x2713; AC only cools when accelerating</li>
             </ul>
           </div>

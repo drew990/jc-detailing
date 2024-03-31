@@ -15,11 +15,12 @@ export default function Contact() {
           <h3>Contact Us Today</h3>
 
           <p>
-            Don't wait any longer to take care of your car's maintenance needs.
-            We understand how important it is to keep your car running smoothly,
-            which is why we respond to appointment requests within 48 hours. So
-            why wait? Schedule an appointment with Auto Essentials today and
-            experience the convenience and quality of our services firsthand.
+            Don&apos;t wait any longer to take care of your car&apos;s
+            maintenance needs. We understand how important it is to keep your
+            car running smoothly, which is why we respond to appointment
+            requests within 48 hours. So why wait? Schedule an appointment with
+            Auto Essentials today and experience the convenience and quality of
+            our services firsthand.
           </p>
         </section>
         <form action="https://formspree.io/f/mleqpdqr" method="POST">

@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div className={styles.UnderConstruction}>
       <div style={{ display: "flex", flexDirection: "column", width: "90%" }}>
-        <h1>🚧 Sorry... It's Under Construction 🚧</h1>
+        <h1>🚧 Sorry... It&apos;s Under Construction 🚧</h1>
         <Link style={{ opacity: 1 }} href="/">
           <button style={{ cursor: "pointer" }}>Back To Home</button>
         </Link>
