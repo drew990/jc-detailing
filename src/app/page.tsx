@@ -2,10 +2,10 @@
 import React from "react";
 import styles from "./page.module.css";
 import Hero from "../Components/Hero";
-import Services from "@/Components/Services";
+import Services from "@/Components/ServicesCom";
 import Quality from "@/Components/Quality";
 import SocialMedia from "@/Components/SocialMedia";
-import Appointment from "@/Components/Contact";
+import Appointment from "@/Components/ContactCom";
 // import AOS from "aos";
 // import "aos/dist/aos.css"; // You can also use <link> for styles
 
