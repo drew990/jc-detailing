@@ -59,13 +59,13 @@ export default function NavBar() {
       </div>
       {isOpen && size.width != undefined && size.width < 800 ? (
         <section style={{ flexDirection: "column", margin: "auto" }}>
-          <Link href="/Q&A">
-            <p>Q&A</p>
+          <Link href="/services">
+            <p>Services</p>
           </Link>
-          <Link href="/Contact">
+          <Link href="/contact">
             <p>Contact</p>
           </Link>
-          <Link href="/About">
+          <Link href="/about">
             <p>About Us</p>
           </Link>
           {/* <p>{scrollY}</p> */}
