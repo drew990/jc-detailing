@@ -14,7 +14,13 @@ import AC from "@/assets/serviceimages/AC.jpg";
 import Headlight from "@/assets/serviceimages/headlight.png";
 import Battery from "@/assets/serviceimages/Battery.png";
 import Wiper from "@/assets/serviceimages/Wiper.png";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Auto Essentials - Mobile Lube - Services",
+  description:
+    "Auto Essentials is a top-notch mobile lube shop that provides fast, reliable, and professional on-site automotive maintenance services.",
+};
 // BIG SERVICE HORIZONTAL
 // Like Oil changes, brakes, transmission, and belts
 

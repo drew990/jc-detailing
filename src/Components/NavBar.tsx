@@ -5,10 +5,21 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fade as Hamburger } from "hamburger-react";
 import Logo1 from "@/assets/logo/AE-Logo-1-new.png";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export default function NavBar() {
   const [isOpen, setOpen] = useState(false);
   const size = useWindowSize();
+
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const url = `${pathname}?${searchParams}`;
+    console.log(url);
+    // You can now use the current URL
+    // ...
+  }, [pathname, searchParams]);
 
   return (
     <nav>
