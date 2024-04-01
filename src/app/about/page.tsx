@@ -1,13 +1,6 @@
 "use client";
 import React from "react";
 import style from "@/app/page.module.css";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Auto Essentials - Mobile Lube - About Us",
-  description:
-    "Auto Essentials is a top-notch mobile lube shop that provides fast, reliable, and professional on-site automotive maintenance services.",
-};
 
 export default function page() {
   return (
