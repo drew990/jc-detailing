@@ -18,7 +18,13 @@ function Footer() {
               alignItems: "center",
             }}
           >
-            <Image src={Logo1} alt="Logo" width={200} height={67} />
+            <Image
+              loading="lazy"
+              src={Logo1}
+              alt="Logo"
+              width={200}
+              height={67}
+            />
           </div>
           <div>
             <h4>Contact Info</h4>
@@ -27,8 +33,7 @@ function Footer() {
               Robert - (562)556-6128
             </p>
             <p>
-              Email: <br /> andrewbanagas40@gmail.com <br />
-              robertverdugo038@gmail.com
+              Email: <br /> autoessentialsmobile@gmail.com
             </p>
 
             {/* <p>About</p> */}
@@ -42,8 +47,9 @@ function Footer() {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <h4>Navigation</h4>
             <Link href="/">Home</Link>
-            <Link href="/About">Who We Are</Link>
-            <Link href="/Contact">Contact Us</Link>
+            <Link href="/about">Who We Are</Link>
+            <Link href="/contact">Contact Us</Link>
+            <Link href="/services">Our Services</Link>
           </div>
         </div>
         <div className={styles.FooterCenter}>

@@ -34,6 +34,7 @@ export default function page() {
         <motion.div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={OilChange}
               alt="Oil Change Pic"
               width={1}
@@ -54,6 +55,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Brakes}
               alt="Brake Pic"
               width={1}
@@ -75,6 +77,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Belt}
               alt="Belt Pic"
               width={1}
@@ -96,6 +99,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Transmission}
               alt="Transmission Pic"
               width={1}
@@ -117,6 +121,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Filter}
               alt="Filter Pic"
               width={1}
@@ -137,6 +142,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Tires}
               alt="Tires Pic"
               width={1}
@@ -156,6 +162,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={AC}
               alt="AC Pic"
               width={1}
@@ -175,6 +182,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Wiper}
               alt="Wiper Pic"
               width={1}
@@ -194,6 +202,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Battery}
               alt="Battery Pic"
               width={1}
@@ -215,6 +224,7 @@ export default function page() {
         <div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>
             <Image
+              loading="lazy"
               src={Headlight}
               alt="Headlight Pic"
               width={1}

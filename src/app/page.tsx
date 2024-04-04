@@ -6,8 +6,6 @@ import Services from "@/Components/ServicesCom";
 import Quality from "@/Components/Quality";
 import SocialMedia from "@/Components/SocialMedia";
 import Appointment from "@/Components/ContactCom";
-// import AOS from "aos";
-// import "aos/dist/aos.css"; // You can also use <link> for styles
 
 export default function Home() {
   return (

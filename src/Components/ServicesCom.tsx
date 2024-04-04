@@ -21,7 +21,7 @@ function Services() {
       <h2>Services We Offer</h2>
       <section className={styles.Container}>
         <div className={styles.Card2}>
-          <Image alt="Oil" src={Oil} height={60} width={60} />
+          <Image loading="lazy" alt="Oil" src={Oil} height={60} width={60} />
           <h3>Oil Change</h3>
           <p>
             Regular oil changes are crucial for maintaining the health of your
@@ -30,7 +30,13 @@ function Services() {
           </p>
         </div>
         <div className={styles.Card2}>
-          <Image alt="Brakes" src={Brakes} height={60} width={60} />
+          <Image
+            loading="lazy"
+            alt="Brakes"
+            src={Brakes}
+            height={60}
+            width={60}
+          />
           <h3>Brake Services</h3>
           <p>
             Brake and brake rotor replacements are important for maintaining the
@@ -40,7 +46,7 @@ function Services() {
           </p>
         </div>
         <div className={styles.Card2}>
-          <Image alt="Belt" src={Belt} height={60} width={60} />
+          <Image loading="lazy" alt="Belt" src={Belt} height={60} width={60} />
           <h3>Belt Replacement</h3>
           <p>
             Belts play a crucial role in the functioning of different components
@@ -51,7 +57,13 @@ function Services() {
           </p>
         </div>
         <div className={styles.Card2}>
-          <Image alt="Transmission" src={Transmission} height={60} width={60} />
+          <Image
+            loading="lazy"
+            alt="Transmission"
+            src={Transmission}
+            height={60}
+            width={60}
+          />
           <h3>Transmission Service</h3>
           <p>
             Regular transmission service is crucial to prevent expensive repairs
@@ -62,7 +74,13 @@ function Services() {
           </p>
         </div>
         <div className={styles.Card1}>
-          <Image alt="Filter" src={Filter} height={50} width={50} />
+          <Image
+            loading="lazy"
+            alt="Filter"
+            src={Filter}
+            height={50}
+            width={50}
+          />
           <h4>Air Filter Replacement</h4>
           <p>
             Engine and cabin filter changes are important for maintaining the
@@ -72,7 +90,7 @@ function Services() {
         </div>
 
         <div className={styles.Card1}>
-          <Image alt="Tire" src={Tire} height={50} width={50} />
+          <Image loading="lazy" alt="Tire" src={Tire} height={50} width={50} />
           <h4>Tire Rotation</h4>
           <p>
             Regular tire rotations help even wear and tear, which not only
@@ -81,7 +99,7 @@ function Services() {
           </p>
         </div>
         <div className={styles.Card1}>
-          <Image alt="AC" src={AC} height={50} width={50} />
+          <Image loading="lazy" alt="AC" src={AC} height={50} width={50} />
           <h4>AC Recharge</h4>
           <p>
             Recharge your car&apos;s air conditioning regularly to prevent poor
@@ -90,7 +108,13 @@ function Services() {
         </div>
 
         <div className={styles.Card1}>
-          <Image alt="WindShield" src={WindShield} height={50} width={50} />
+          <Image
+            loading="lazy"
+            alt="WindShield"
+            src={WindShield}
+            height={50}
+            width={50}
+          />
           <h4>Windshield Replacement</h4>
           <p>
             Over time, the rubber on the wiper blades can wear out, causing
@@ -99,7 +123,13 @@ function Services() {
         </div>
 
         <div className={styles.Card1}>
-          <Image alt="WaterPump" src={WaterPump} height={50} width={50} />
+          <Image
+            loading="lazy"
+            alt="WaterPump"
+            src={WaterPump}
+            height={50}
+            width={50}
+          />
           <h4>Water Pump Replacement</h4>
           <p>
             Replacing the water pump, one can ensure that the engine runs
@@ -108,7 +138,13 @@ function Services() {
           </p>
         </div>
         <div className={styles.Card1}>
-          <Image alt="Battery" src={Battery} height={50} width={50} />
+          <Image
+            loading="lazy"
+            alt="Battery"
+            src={Battery}
+            height={50}
+            width={50}
+          />
           <h4>Battery Replacement</h4>
           <p>
             Car batteries generally last from 3-5 years, but testing the
@@ -117,7 +153,13 @@ function Services() {
         </div>
 
         <div className={styles.Card1}>
-          <Image alt="Headlight" src={Headlight} height={50} width={50} />
+          <Image
+            loading="lazy"
+            alt="Headlight"
+            src={Headlight}
+            height={50}
+            width={50}
+          />
           <h4>Headlight Replacement</h4>
           <p>
             Are you having trouble seeing the road at night or in low-light

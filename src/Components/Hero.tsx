@@ -65,6 +65,7 @@ export default function Hero() {
           data-aos="fade-up"
         >
           <Image
+            loading="lazy"
             src={Logo1}
             alt="Logo"
             layout="responsive"
