@@ -14,6 +14,10 @@ export default function NavBar() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
+  const linkClick = () => {
+    setOpen(false);
+  };
+
   useEffect(() => {
     const url = `${pathname}?${searchParams}`;
     console.log(url);
@@ -47,6 +51,9 @@ export default function NavBar() {
             <Link href="/contact">
               <p>Contact</p>
             </Link>
+            <Link href="/app">
+              <p>Download Our App</p>
+            </Link>
           </section>
         ) : (
           <Hamburger
@@ -59,14 +66,17 @@ export default function NavBar() {
       </div>
       {isOpen && size.width != undefined && size.width < 800 ? (
         <section style={{ flexDirection: "column", margin: "auto" }}>
-          <Link href="/services">
+          <Link href="/services" onClick={linkClick}>
             <p>Services</p>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" onClick={linkClick}>
             <p>Contact</p>
           </Link>
-          <Link href="/about">
+          <Link href="/about" onClick={linkClick}>
             <p>About Us</p>
+          </Link>
+          <Link href="/app" onClick={linkClick}>
+            <p>Download Our App</p>
           </Link>
           {/* <p>{scrollY}</p> */}
         </section>

@@ -38,7 +38,7 @@ export default function page() {
       </p>
       <div className={styles.ContactCustomerPhoneNumber}>
         <Image src={Phone} alt="Phone" width={50} height={50} />
-        <h4> Talk To The Mechanics</h4>
+        <h4> Talk To The Technicians</h4>
       </div>
       <p className={styles.ContactPhone}>
         Andrew - (562)325-2358 <br />
@@ -112,6 +112,40 @@ export default function page() {
               id="Vin"
               name="Vin"
               placeholder="Vin"
+              minLength={17}
+              maxLength={17}
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "1rem",
+            }}
+          >
+            <label>Maker*</label>
+            <input
+              type="text"
+              id="Maker"
+              name="Maker"
+              placeholder="Car Maker"
+              minLength={17}
+              maxLength={17}
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "1rem",
+            }}
+          >
+            <label>Model*</label>
+            <input
+              type="text"
+              id="Model"
+              name="Model"
+              placeholder="Car Model"
               minLength={17}
               maxLength={17}
             />

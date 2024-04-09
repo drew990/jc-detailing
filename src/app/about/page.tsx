@@ -1,10 +1,92 @@
 "use client";
 import React from "react";
-import style from "@/app/page.module.css";
+import styles from "@/app/page.module.css";
+import Link from "next/link";
+import Image from "next/image";
+
+import Location from "@/assets/images/Location-2.jpg";
+import Joshua from "@/assets/images/Joshua.png";
 
 export default function page() {
   return (
-    <div className={style.Container}>
+    <div className={styles.Container}>
+      <h1
+        style={{
+          padding: "0 2rem",
+          borderLeft: "2px solid #071d88",
+          marginTop: "3rem",
+        }}
+      >
+        About Us
+      </h1>
+      <section className={styles.AboutFlex}>
+        <div className={styles.AboutPic}>
+          <Image
+            src={Joshua}
+            alt="Who Pic"
+            layout="responsive"
+            width={1}
+            height={1}
+          />
+        </div>
+        <div className={styles.AboutContainer}>
+          <h2 style={{ textAlign: "center" }}>Who Are We?</h2>
+          <p>
+            Our team is comprised of three highly skilled workers - Robert,
+            Joshua, and Andrew - who possess years of invaluable experience in
+            the automotive industry. Our shared passion for cars is evident in
+            every service we provide, as we strive to deliver the same level of
+            quality that one would expect from a dealership. We decided to
+            establish a mobile lube company to help people become more
+            knowledgeable about vehicle maintenance and upkeep, so they can
+            enjoy the best possible performance from their cars. Whether you
+            need an oil change or a full vehicle inspection, you can trust us to
+            meticulously care for your car. Your vehicle will receive the
+            attention and respect it deserves, ensuring it runs smoothly and
+            reliably for years to come.
+          </p>
+        </div>
+      </section>
+      <section className={styles.AboutFlexReverse}>
+        <div className={styles.AboutPic}>
+          <Image
+            src={Location}
+            alt="Who Pic"
+            layout="responsive"
+            width={1}
+            height={1}
+          />
+        </div>
+        <div className={styles.AboutContainer}>
+          <h2>Where Do We Services?</h2>
+          <p style={{ paddingBottom: "2rem" }}>
+            Our mobile lube services cover a broad range of cities in Southern
+            California, including but not limited to Pasadena, Pomona, Yorba
+            Linda, Huntington Beach, Long Beach, and El Segundo. Our extensive
+            coverage area enables us to deliver our services to a wide range of
+            customers across the region.
+          </p>
+          <p style={{ textAlign: "center" }}>
+            Unsure if we service your city? Send us an email to check.
+          </p>
+          <div style={{ width: "fit-content", margin: "auto" }}>
+            <Link style={{ opacity: 1 }} href="/contact">
+              <button>Contact Us</button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+{
+  /* <div className={style.AboutNavBar}>
+        <Link href="/about#test">Our Mission</Link>
+        <p>Locations</p>
+        <p>How It Works</p>
+        <p>The Crew</p>
+      </div>
       <section className={style.AboutMission}>
         <h1>Our Mission</h1>
         <p>
@@ -19,23 +101,18 @@ export default function page() {
           care.
         </p>
       </section>
-      <section className={style.AboutGenCard}>
-        <h1 style={{ textAlign: "center" }}>The New Generation of Mechanic</h1>
+
+      <section className={style.TextContainer} id="test">
+
+        <h2>How Does it Work?</h2>
         <p>
-          We are the new generation of mechanics, and we&apos;re bringing a
-          fresh perspective to the automotive industry. With years of experience
-          under our belts, we&apos;ve already established a reputation for
-          ourselves as reliable, knowledgeable professionals who prioritize
-          quality and customer satisfaction above all else. We believe that
-          every vehicle is unique, and we take the time to listen to our
-          customer&apos;s concerns and address any issues with care and
-          attention to detail. Whether you need routine maintenance or more
-          complex repairs, you can trust that your car is in good hands with our
-          talented team of experts. We&apos;re excited to continue pushing the
-          boundaries of what it means to be a mechanic and to provide our
-          customers with the best possible service.
+          It's very simple, once making an appointment with us, we drive to the
+          designated house and perform the service in a flat driveway
         </p>
-      </section>
-    </div>
-  );
+        <button>Get In Touch</button>
+
+> */
+}
+{
+  /* className={style.AboutGenCard} */
 }

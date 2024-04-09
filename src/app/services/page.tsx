@@ -30,6 +30,7 @@ export default function page() {
       <h1 style={{ padding: "0 2rem", borderLeft: "2px solid #071d88" }}>
         Services
       </h1>
+
       <motion.section className={styles.ServicesCardFlex}>
         <motion.div className={styles.ServicesCard}>
           <div className={styles.ServicesCardPic}>

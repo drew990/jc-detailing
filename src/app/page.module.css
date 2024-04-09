@@ -6,20 +6,10 @@
   z-index: 1;
 }
 
-.video {
-  width: 110% !important;
-  height: 120% !important;
+.TextContainer {
+  max-width: 1200px;
   margin: auto;
-  position: absolute;
-  z-index: 1;
-}
-
-.DarkVideo {
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100vh;
+  padding: 2rem 0;
 }
 
 .HeroBackground {
@@ -434,22 +424,67 @@ footer .FooterNav a {
   width: 500px;
 }
 
-.AboutMission {
-  text-align: center;
-  background: var(--color-primary-light);
-  padding: 2rem;
+.AboutPic {
+  max-width: 450px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  margin: 2rem auto 5rem auto;
-  max-width: 1000px;
+  margin: 1rem 0;
 }
 
-.AboutProfilePic {
-  width: 250px;
+.AboutFlex {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.AboutFlexReverse {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.AboutContainer {
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.AboutLocation {
   height: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/Location.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.AboutNavBar {
+  margin: 4rem auto 1rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   background: var(--color-primary);
-  border-radius: 100%;
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
-  margin: 2rem auto 3rem auto;
+  width: 60%;
+  max-width: 700px;
+  min-width: 300px;
+  color: var(--color-primary-light);
+  /* border-radius: var(--border-radius); */
+  box-shadow: var(--box-shadow);
 }
 
 .ServicesCardFlex {
@@ -501,6 +536,20 @@ footer .FooterNav a {
   padding-bottom: 0.5rem;
 }
 
+.AppContainer {
+  padding: 8rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/AppBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .Container {
     max-width: 1600px;
@@ -524,6 +573,9 @@ footer .FooterNav a {
 }
 
 @media screen and (max-width: 767px) {
+  .Container {
+    width: 90%;
+  }
   .AppointmentFlex {
     display: flex;
     flex-wrap: wrap;
@@ -576,5 +628,13 @@ footer .FooterNav a {
     padding: 2rem 1.5rem;
     background-color: rgba(0, 0, 0, 0.75);
     min-height: 55vh;
+  }
+  .AboutPic {
+    width: 300px;
+    height: 300px;
+  }
+  .AboutContainer {
+    padding: 0;
+    text-align: center;
   }
 }

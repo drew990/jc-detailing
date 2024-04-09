@@ -14,6 +14,7 @@ export default function SocialMedia() {
         style={{ width: "80%", margin: "auto", textAlign: "center" }}
       >
         <h2>Stay Up To Date On Our Social Media</h2>
+
         <div className={styles.SocialMediaButton}>Coming Soon...</div>
       </motion.div>
     </div>

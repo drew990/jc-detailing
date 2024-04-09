@@ -93,6 +93,40 @@ export default function Contact() {
               display: "flex",
               flexDirection: "column",
               paddingTop: "1rem",
+            }}
+          >
+            <label>Maker*</label>
+            <input
+              type="text"
+              id="Maker"
+              name="Maker"
+              placeholder="Car Maker"
+              minLength={17}
+              maxLength={17}
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "1rem",
+            }}
+          >
+            <label>Model*</label>
+            <input
+              type="text"
+              id="Model"
+              name="Model"
+              placeholder="Car Model"
+              minLength={17}
+              maxLength={17}
+            />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "1rem",
               maxWidth: "100%",
               width: "100%",
             }}
