@@ -242,6 +242,7 @@
 }
 
 .FooterCenter {
+  min-width: 300px;
   width: 100%;
   text-align: center;
 }
@@ -456,6 +457,7 @@ footer .FooterNav a {
 .AboutContainer {
   max-width: 800px;
   padding: 0 2rem;
+  text-align: center;
 }
 
 .AboutLocation {
@@ -635,6 +637,5 @@ footer .FooterNav a {
   }
   .AboutContainer {
     padding: 0;
-    text-align: center;
   }
 }

@@ -9,7 +9,7 @@ export default function Quality() {
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.25 }}
         viewport={{ once: true }}
         className={styles.Container}
       >

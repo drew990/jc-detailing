@@ -14,6 +14,7 @@ import AC from "@/assets/serviceimages/AC.jpg";
 import Headlight from "@/assets/serviceimages/headlight.png";
 import Battery from "@/assets/serviceimages/Battery.png";
 import Wiper from "@/assets/serviceimages/Wiper.png";
+import Link from "next/link";
 
 // BIG SERVICE HORIZONTAL
 // Like Oil changes, brakes, transmission, and belts
@@ -244,6 +245,11 @@ export default function page() {
           </div>
         </div>
       </motion.section>
+      <div style={{ width: "fit-content", margin: "auto" }}>
+        <Link href="/contact" style={{ opacity: 1 }}>
+          <button>Get In Touch</button>
+        </Link>
+      </div>
     </div>
   );
 }

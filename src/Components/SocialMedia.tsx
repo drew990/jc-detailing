@@ -9,7 +9,7 @@ export default function SocialMedia() {
         data-aos="fade-up"
         viewport={{ once: true }}
         initial={{ y: 100, opacity: 0 }}
-        transition={{ delay: 0.5 }}
+        transition={{ delay: 0.25 }}
         whileInView={{ y: 0, opacity: 1 }}
         style={{ width: "80%", margin: "auto", textAlign: "center" }}
       >

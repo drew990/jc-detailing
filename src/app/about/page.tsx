@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import Location from "@/assets/images/Location-2.jpg";
 import Joshua from "@/assets/images/Joshua.png";
+import CarJack from "@/assets/images/CarJack.jpg";
 
 export default function page() {
   return (
@@ -72,6 +73,31 @@ export default function page() {
           <div style={{ width: "fit-content", margin: "auto" }}>
             <Link style={{ opacity: 1 }} href="/contact">
               <button>Contact Us</button>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className={styles.AboutFlex}>
+        <div className={styles.AboutPic}>
+          <Image
+            src={CarJack}
+            alt="Jack Pic"
+            layout="responsive"
+            width={1}
+            height={1}
+          />
+        </div>
+        <div className={styles.AboutContainer}>
+          <h2>How Does Our Service Work?</h2>
+          <p>
+            Our mobile service comes to your house, and we service your car in
+            your driveway. Simply schedule a time that works best for you, and
+            we'll take care of the rest. Enjoy the convenience of having your
+            car serviced without leaving your home.
+          </p>
+          <div style={{ width: "fit-content", margin: "auto" }}>
+            <Link style={{ opacity: 1 }} href="/services">
+              <button>Our Services</button>
             </Link>
           </div>
         </div>

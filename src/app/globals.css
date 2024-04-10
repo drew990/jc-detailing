@@ -294,15 +294,18 @@ form div {
     letter-spacing: 1px;
   }
   form div {
-    max-width: 300px;
+    max-width: 100%;
     margin: 0 0rem;
     width: 100%;
+  }
+  input {
+    max-width: 100%;
   }
   textarea {
     margin: 0;
   }
   button {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: 500;
     padding: 1rem 3rem;
     background-color: var(--color-secondary-dark);
